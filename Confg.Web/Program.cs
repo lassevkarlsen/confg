@@ -1,27 +1,8 @@
-using Confg.Web.Components;
+using LVK.Bootstrapping;
 
-using Microsoft.AspNetCore.DataProtection;
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+builder.Bootstrap(new ApplicationBootstrapper());
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-builder.Services.AddDataProtection()
-   .PersistKeysToFileSystem(new DirectoryInfo("/data/dp-keys"))
-   .SetApplicationName("Confg.Web");
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error", createScopeForErrors: true);
-}
-
-app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
-app.UseAntiforgery();
-
-app.MapStaticAssets();
-app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
-
-app.Run();
+WebApplication app = builder.Build();
+await app.Initialize();
+await app.RunAsync();
