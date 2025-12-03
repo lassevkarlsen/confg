@@ -33,7 +33,7 @@ jobs:
 
       - name: Stop Docker Compose services
         working-directory: /mnt/secure1/confg
-        run: docker-compose down
+        run: docker compose down
 
       - name: Deploy application
         run: |
@@ -42,4 +42,4 @@ jobs:
 
       - name: Start Docker Compose services
         working-directory: /mnt/secure1/confg
-        run: docker-compose up -d
+        run: docker compose up -d
