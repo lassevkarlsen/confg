@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LVK.Core", "LVK.Libraries\s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LVK.Bootstrapping", "LVK.Libraries\src\LVK.Bootstrapping\LVK.Bootstrapping.csproj", "{89A95D31-570E-4AA8-A251-67D2510A7B24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confg.AppHost", "Confg.AppHost\Confg.AppHost.csproj", "{9977DA8D-5524-4DEE-8210-660211089C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confg.ServiceDefaults", "Confg.ServiceDefaults\Confg.ServiceDefaults.csproj", "{350D809D-BBDF-4C14-B1AF-EA4F5D58AF93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{89A95D31-570E-4AA8-A251-67D2510A7B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A95D31-570E-4AA8-A251-67D2510A7B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A95D31-570E-4AA8-A251-67D2510A7B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9977DA8D-5524-4DEE-8210-660211089C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9977DA8D-5524-4DEE-8210-660211089C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9977DA8D-5524-4DEE-8210-660211089C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9977DA8D-5524-4DEE-8210-660211089C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350D809D-BBDF-4C14-B1AF-EA4F5D58AF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350D809D-BBDF-4C14-B1AF-EA4F5D58AF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350D809D-BBDF-4C14-B1AF-EA4F5D58AF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350D809D-BBDF-4C14-B1AF-EA4F5D58AF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9E316B41-AB12-48A0-BC26-072B2F112B7C} = {ABECA093-643A-43C2-A180-6385DB4361FB}

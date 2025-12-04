@@ -20,6 +20,8 @@ public class ApplicationInitializer : IHostInitializer<WebApplication>
         host.MapStaticAssets();
         host.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 
+        host.MapDefaultEndpoints();
+
         return Task.CompletedTask;
     }
 }

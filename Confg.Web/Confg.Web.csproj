@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Confg.Core\Confg.Core.csproj" />
+      <ProjectReference Include="..\Confg.ServiceDefaults\Confg.ServiceDefaults.csproj" />
     </ItemGroup>
 
 </Project>

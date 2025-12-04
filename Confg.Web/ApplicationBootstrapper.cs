@@ -8,6 +8,8 @@ public class ApplicationBootstrapper : IModuleBootstrapper
 {
     public void Bootstrap(IHostApplicationBuilder builder)
     {
+        builder.AddServiceDefaults();
+
         // Add services to the container.
         builder.Services.AddRazorComponents().AddInteractiveServerComponents();
         builder.Services.AddDataProtection()
